@@ -10,6 +10,7 @@ export const Community = () => {
   const modal = () =>{
     setIsOpen(!isOpen);
   }
+  const[good, setgood] = useState(false);
 
   return (
     <div>
@@ -26,7 +27,7 @@ export const Community = () => {
             <img src="post_img.png" alt="게시물 이미지"/>
           </div>
           <div className="post_bottom">
-            <img src="post_bottom_heart.png" alt="좋아요"/>
+            {good ? <img src="good.png" alt="좋아요" onClick={() => setgood(false)}/> : <img src="post_bottom_heart.png" alt="좋아요" onClick={() => setgood(true)} /> }
             <img src="post_bottom_comment.png" alt="댓글"/>
             <p className="post_bottom_txt">부산소마고, bssm님이 좋아요를 눌렀습니다.</p>
           </div>
@@ -40,7 +41,7 @@ export const Community = () => {
             <img src="post_img.png" alt="게시물 이미지"/>
           </div>
           <div className="post_bottom">
-            <img src="post_bottom_heart.png" alt="좋아요"/>
+          {good ? <img src="good.png" alt="좋아요" onClick={() => setgood(false)}/> : <img src="post_bottom_heart.png" alt="좋아요" onClick={() => setgood(true)} /> }
             <img src="post_bottom_comment.png" alt="댓글"/>
             <p className="post_bottom_txt">부산소마고, bssm님이 좋아요를 눌렀습니다.</p>
           </div>
