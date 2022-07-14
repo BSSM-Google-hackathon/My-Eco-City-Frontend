@@ -1,0 +1,422 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 448,
+      "max": [
+        1.387302279472351,
+        1.1356053352355957,
+        1.107765793800354
+      ],
+      "min": [
+        -2.2274746894836426,
+        -1.5347899198532104,
+        -2.085245370864868
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 5376,
+      "componentType": 5126,
+      "count": 448,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 1320,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 10752,
+      "componentType": 5126,
+      "count": 160,
+      "max": [
+        1.0273842811584473,
+        1.1190521717071533,
+        0.9966944456100464
+      ],
+      "min": [
+        -1.9838409423828125,
+        -1.0411531925201416,
+        -1.4754492044448853
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 12672,
+      "componentType": 5126,
+      "count": 160,
+      "max": [
+        0.848368227481842,
+        0.9761061072349548,
+        0.9709146022796631
+      ],
+      "min": [
+        -0.8483681082725525,
+        -0.9993340969085693,
+        -0.9709146022796631
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 5280,
+      "componentType": 5125,
+      "count": 474,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 14592,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        -0.3944120407104492,
+        -0.6406842470169067,
+        0.6344480514526367
+      ],
+      "min": [
+        -1.6172876358032227,
+        -0.9099267721176147,
+        -0.6525096893310547
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 15360,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        -0.08704853057861328,
+        -0.9370905160903931,
+        0.21034598350524902
+      ],
+      "min": [
+        -0.3297499716281891,
+        -0.994422435760498,
+        -0.02875952050089836
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 7176,
+      "componentType": 5125,
+      "count": 192,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 16128,
+      "componentType": 5126,
+      "count": 33,
+      "max": [
+        -0.7359700202941895,
+        -0.7710473537445068,
+        0.33706966042518616
+      ],
+      "min": [
+        -1.3591132164001465,
+        -0.9082459211349487,
+        -0.31872791051864624
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 16524,
+      "componentType": 5126,
+      "count": 33,
+      "max": [
+        -0.08704853057861328,
+        -0.9370905160903931,
+        0.21034598350524902
+      ],
+      "min": [
+        -0.3297499716281891,
+        -0.994422435760498,
+        -0.02875952050089836
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 7944,
+      "componentType": 5125,
+      "count": 96,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jesse Ragos (https://sketchfab.com/jkiel9)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/cctv-camera-minimal-553ace160b8c4eb2a62b755ffdb7b6eb",
+      "title": "CCTV Camera minimal"
+    },
+    "generator": "Sketchfab-12.65.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 8328,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16920,
+      "byteOffset": 8328,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 25248,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "cctv_body",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.482124,
+          0.506281,
+          0.538226,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "cctv_inner",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0253941,
+          0.0253941,
+          0.0253941,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "cctv_cam_iris",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "metallicFactor": 0.1,
+        "roughnessFactor": 0.2
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "cctv_cam_pupil",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0302508,
+          0.0146279,
+          0.0310637,
+          1.0
+        ],
+        "metallicFactor": 0.1,
+        "roughnessFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_3",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9
+          },
+          "indices": 11,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "GLTF_SceneRootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "matrix": [
+        -1.595061149828325e-08,
+        1.5950611973648518e-08,
+        -0.535213708877563,
+        0.0,
+        0.953835427761077,
+        -2.8426510922940906e-08,
+        -2.842651177011695e-08,
+        0.0,
+        -1.5950611973648518e-08,
+        -0.535213708877563,
+        -1.595061149828325e-08,
+        0.0,
+        -85.1210708618164,
+        18.817035675048828,
+        -53.4825439453125,
+        1.0
+      ],
+      "name": "CCTV Cam_725"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_4"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_5"
+    },
+    {
+      "mesh": 2,
+      "name": "Object_6"
+    },
+    {
+      "mesh": 3,
+      "name": "Object_7"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

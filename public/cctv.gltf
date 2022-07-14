@@ -1,0 +1,473 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 1320,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 448,
+      "max": [
+        1.007843137254902,
+        1.007843137254902,
+        1.007843137254902
+      ],
+      "min": [
+        -1.007843137254902,
+        -1.007843137254902,
+        -1.007843137254902
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 448,
+      "max": [
+        1.3890681695402338,
+        1.1370017528533936,
+        1.1092497619350303
+      ],
+      "min": [
+        -2.2292405795515253,
+        -1.5365558099210932,
+        -2.087011260932751
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5125,
+      "count": 474,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 160,
+      "max": [
+        0.8559332443218604,
+        0.9838529315649294,
+        0.9812851288739373
+      ],
+      "min": [
+        -0.8561149326025271,
+        -1.0070809212385439,
+        -0.9786614266096377
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 160,
+      "max": [
+        1.0288553242573926,
+        1.1198091198306694,
+        0.9988452879812986
+      ],
+      "min": [
+        -1.9853119854817578,
+        -1.042624235619087,
+        -1.4769202475438306
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5125,
+      "count": 192,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        -0.08609676022155613,
+        -0.9363644439800113,
+        0.21108660947750596
+      ],
+      "min": [
+        -0.33070174198524627,
+        -0.9953742061175552,
+        -0.02971129085795552
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        -0.3938290312282038,
+        -0.6402126193104807,
+        0.6350767557715344
+      ],
+      "min": [
+        -1.6179163401221204,
+        -0.9105554764365125,
+        -0.6531383936499524
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5125,
+      "count": 96,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 33,
+      "max": [
+        -0.08609676022155613,
+        -0.9363644439800113,
+        0.21108660947750596
+      ],
+      "min": [
+        -0.33070174198524627,
+        -0.9953742061175552,
+        -0.02971129085795552
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 33,
+      "max": [
+        -0.7356730243841729,
+        -0.7708071532136472,
+        0.33739003051358085
+      ],
+      "min": [
+        -1.3594335864885412,
+        -0.9085662912233434,
+        -0.3190482806070409
+      ],
+      "type": "VEC3"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jesse Ragos (https://sketchfab.com/jkiel9)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/cctv-camera-minimal-553ace160b8c4eb2a62b755ffdb7b6eb",
+      "title": "CCTV Camera minimal"
+    },
+    "generator": "Sketchfab-12.65.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1405
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1408,
+      "byteLength": 642
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2056,
+      "byteLength": 470
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2528,
+      "byteLength": 329
+    }
+  ],
+  "buffers": [
+    {
+      "name": "cctv",
+      "byteLength": 2864,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "cctv_body",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.482124,
+          0.506281,
+          0.538226,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "cctv_inner",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0253941,
+          0.0253941,
+          0.0253941,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "cctv_cam_iris",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "metallicFactor": 0.1,
+        "roughnessFactor": 0.2
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "cctv_cam_pupil",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0302508,
+          0.0146279,
+          0.0310637,
+          1
+        ],
+        "metallicFactor": 0.1,
+        "roughnessFactor": 0
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 5
+          },
+          "indices": 3,
+          "material": 1,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Object_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 8
+          },
+          "indices": 6,
+          "material": 2,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Object_3",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 11
+          },
+          "indices": 9,
+          "material": 3,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 3,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        1,
+        0,
+        0,
+        -1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "GLTF_SceneRootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "matrix": [
+        -1.595061149828325e-8,
+        1.5950611973648518e-8,
+        -0.535213708877563,
+        0,
+        0.953835427761077,
+        -2.8426510922940906e-8,
+        -2.842651177011695e-8,
+        0,
+        -1.5950611973648518e-8,
+        -0.535213708877563,
+        -1.595061149828325e-8,
+        0,
+        -85.1210708618164,
+        18.817035675048828,
+        -53.4825439453125,
+        1
+      ],
+      "name": "CCTV Cam_725"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_4"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_5"
+    },
+    {
+      "mesh": 2,
+      "name": "Object_6"
+    },
+    {
+      "mesh": 3,
+      "name": "Object_7"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

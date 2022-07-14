@@ -24,7 +24,7 @@
     margin: 2px 2px 2px 2px;
     margin-left: 20px;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 90px;
     height: 90px;
 }
@@ -60,4 +60,10 @@
     border-radius: 5px;
     font-size: 9px;
     text-align: center;
+}
+
+.line--item > img {
+    border-radius: 20px;
+    width: 90px;
+    height: 90px;
 }

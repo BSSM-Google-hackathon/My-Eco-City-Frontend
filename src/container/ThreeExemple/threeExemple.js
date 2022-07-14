@@ -13,6 +13,7 @@ import Bicycle from '../ProductionLine/ProductionComponents/Bicycle';
 import WindTurbin from '../ProductionLine/ProductionComponents/Wind-turbin';
 import Drone from '../ProductionLine/ProductionComponents/Drone';
 import Tree from '../ProductionLine/ProductionComponents/Tree';
+import Solor from '../ProductionLine/ProductionComponents/Solor';
 
 const ThreeExemple = ({ children }) => { 
 
@@ -34,31 +35,35 @@ const ThreeExemple = ({ children }) => {
                     <OrbitControls enabled={orbit[0]}/>
                 </Suspense>
                 {orbit[2][0].created && (<Suspense fallback={null}>
-                    <Sea orbit={orbit[2][0].transformable}/>
+                    <Bench orbit={orbit[2][0].transformable}/>
                     {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
                 {orbit[2][1].created && (<Suspense fallback={null}>
-                    <Box orbit={orbit[2][1].transformable}/>
+                    <Bicycle orbit={orbit[2][1].transformable}/>
                     {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
                 {orbit[2][2].created && (<Suspense fallback={null}>
-                    <Bench orbit={orbit[2][2].transformable}/>
+                    <WindTurbin orbit={orbit[2][2].transformable}/>
                     {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
                 {orbit[2][3].created && (<Suspense fallback={null}>
-                    <Bicycle orbit={orbit[2][3].transformable}/>
+                    <Drone orbit={orbit[2][3].transformable}/>
                     {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
                 {orbit[2][4].created && (<Suspense fallback={null}>
-                    <WindTurbin orbit={orbit[2][4].transformable}/>
+                    <Tree orbit={orbit[2][4].transformable}/>
                     {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
                 {orbit[2][5].created && (<Suspense fallback={null}>
-                    <Drone orbit={orbit[2][5].transformable}/>
+                    <Sea orbit={orbit[2][5].transformable}/>
                     {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
                 {orbit[2][6].created && (<Suspense fallback={null}>
-                    <Tree orbit={orbit[2][6].transformable}/>
+                    <Box orbit={orbit[2][6].transformable}/>
+                    {/* <ambientLight intensity={.5} /> */}
+                </Suspense>)}
+                {orbit[2][7].created && (<Suspense fallback={null}>
+                    <Solor orbit={orbit[2][7].transformable}/>
                     {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
             </Canvas>

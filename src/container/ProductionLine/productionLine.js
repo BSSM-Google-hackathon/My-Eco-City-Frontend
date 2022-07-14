@@ -35,22 +35,19 @@ const ProductionLine = () => {
   const lineItem = eco_item.map((item, idx) => {
     return (
       <div className="line--item" key={item.id} > 
-        <Canvas className="canvas2" onClick={()=>SelectedItem(idx)}
-        onMouseOver={function () {
-          setHover(true)
-          setID(idx)
-        }}
-        onMouseOut={function () {
-          setHover(false)
-          setID(-1)
-        }}>
-          <Suspense fallback={null}>
-            <Shadow />
-            <ambientLight intensity={1} />
-            <directionalLight position={[0, 1, 0]} intensity={1} />
-            <OrbitControls enableZoom={true} autoRotate={true} autoRotateSpeed={1} />
-          </Suspense>
-        </Canvas>
+        <img
+            src={require(`./data/${idx+1}.png`)}
+            alt={item.title}
+            onClick={()=>SelectedItem(idx)}
+            onMouseOver={function () {
+              setHover(true)
+              setID(idx)
+            }}
+            onMouseOut={function () {
+              setHover(false)
+              setID(-1)
+            }}
+        />
         {(isHover && idx == ID) ?
         <div className="triangle"></div>:null}
         {(isHover && idx == ID) ?<div className="title-and-desc">{item.desc}</div>:null}
