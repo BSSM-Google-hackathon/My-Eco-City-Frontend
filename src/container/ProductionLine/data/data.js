@@ -11,28 +11,28 @@ const eco_item = [
 }, 
 {
     id: 3,
-    title: "water",
-    desc: "",
+    title: "bench",
+    desc: "순 나무로 이루어진 벤치",
 }, 
 {
     id: 4,
-    title: "water",
-    desc: "",
+    title: "bicycle",
+    desc: "친환경 자전거",
 }, 
 {
     id: 5,
-    title: "water",
-    desc: "",
+    title: "wind-turbin",
+    desc: "풍력발전기",
 }, 
 {
     id: 6,
-    title: "water",
-    desc: "",
+    title: "car",
+    desc: "스마트 드론",
 }, 
 {
     id: 7,
-    title: "water",
-    desc: "",
+    title: "tree",
+    desc: "친환경 나무",
 }, 
 {
     id: 8,
