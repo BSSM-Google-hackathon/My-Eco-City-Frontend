@@ -10,23 +10,31 @@ import '../../styles/Canvas/productionLine.css'
 
 // data
 import eco_item from './data/data';
+import { useOrbitContext } from '../../context/orbitContext';
 
 const ProductionLine = () => {
-  
-  const Click = (idx) => {
 
+  const {orbit,
+    completed,
+    checked} = useOrbitContext();
+
+  const SelectedItem = () => {
+    completed();
+  }
+  
+  const CompletedItem = () => {
+    checked();
   }
 
   const lineItem = eco_item.map((item, idx) => {
     return (
-      <div className="line--item" key={item.id} onClick={Click(idx+1)}>{idx+1} {item.title} {item.desc} 
+      <div className="line--item" onClick={SelectedItem} key={item.id} >{idx+1} {item.title} {item.desc} 
         <Canvas className="canvas2">
           <Suspense fallback={null}>
             <Shadow />
             <ambientLight intensity={1} />
             <directionalLight position={[0, 1, 0]} intensity={1} />
             <OrbitControls enableZoom={true} autoRotate={true} autoRotateSpeed={1} />
-            {/* <Sea /> */}
           </Suspense>
         </Canvas>
       </div>
@@ -36,7 +44,7 @@ const ProductionLine = () => {
   return (
     <div className="line">
       {lineItem}
-      <button>확인</button>
+      <button onClick={CompletedItem}>확인</button>
     </div>
   )
 }

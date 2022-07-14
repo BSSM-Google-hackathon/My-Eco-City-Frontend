@@ -1,11 +1,11 @@
-import React, { useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { useSpring, a } from "@react-spring/three"
 import { useThree } from "react-three-fiber"
 import { useGesture } from "react-use-gesture"
 import { TransformControls } from '@react-three/drei'
 
-export default function Sea({ ...props }) {
+export default function Sea( props ) {
   
   const { size, viewport } = useThree();
   const aspect = size.width / viewport.width;
@@ -16,10 +16,12 @@ export default function Sea({ ...props }) {
 
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/city.gltf')
+
   // const { actions } = useAnimations(animations, group)
+  
   return (
-    <TransformControls>
-    <group ref={group} {...props} dispose={null}>
+    <TransformControls enabled={props.orbit[1]} showX={props.orbit[1]} showZ={props.orbit[1]} showY={props.orbit[1]}>
+    <group ref={group} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.2}>
           <group name="root">
@@ -32,7 +34,6 @@ export default function Sea({ ...props }) {
         </group>
       </group>
     </group>
-
     </TransformControls>
   )
 }
