@@ -21,6 +21,7 @@ const ThreeExemple = ({ children }) => {
             <Canvas className="canvas" gl={{ preserveDrawingBuffer: true }} camera={{ position: [-1.5, 0.5, 3] }}>
                 <Suspense fallback={null}>
                     <Shadow />
+                    {/* 스마트 시티 불러오기 */}
                     <SmartCity />
                     <ambientLight intensity={.5} />
                     {/* <directionalLight position={[-2, 5, 2]} intensity={5}/>  */}
@@ -29,11 +30,11 @@ const ThreeExemple = ({ children }) => {
                 </Suspense>
                 {orbit[2][0].created && (<Suspense fallback={null}>
                     <Sea orbit={orbit[2][0].transformable}/>
-                    <ambientLight intensity={.5} />
+                    {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
                 {orbit[2][1].created && (<Suspense fallback={null}>
                     <Box orbit={orbit[2][1].transformable}/>
-                    <ambientLight intensity={.5} />
+                    {/* <ambientLight intensity={.5} /> */}
                 </Suspense>)}
             </Canvas>
         </div>

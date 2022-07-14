@@ -2,12 +2,12 @@ const eco_item = [
 {
     id: 1,
     title: "water",
-    desc: "친환경 물",
+    desc: "친환경 정수 물",
 }, 
 {
     id: 2,
     title: "box",
-    desc: "박스입니다.",
+    desc: "친환경 정화 박스",
 }, 
 {
     id: 3,
