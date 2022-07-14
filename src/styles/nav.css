@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .nav-root{
     display: flex;
     position: fixed;
@@ -27,6 +35,8 @@
     align-items: center;
 }
 .nav-userName{
+    margin-top: 5px;
+    font-family: 'GmarketSansMedium';
     margin-right: 10px;
 }
 .nav-userIcon{
@@ -127,7 +137,7 @@ input[id = "menuicon"] {
     background-color: #919191;
   }
   .sidelogo {
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
     font-size: 50px;
     font-weight: bold;
     margin: 170px 0 0 0;
