@@ -1,0 +1,11 @@
+.App {
+    height: 100%;
+}
+
+.canvas {
+    height: 1000px !important;
+}
+
+canvas {
+    height: 100% !important;
+}

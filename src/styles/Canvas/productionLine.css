@@ -1,0 +1,17 @@
+.line {
+    display: flex;
+    position: fixed;
+    /* background-color: #fbfbf8; */
+    border-top: 2px solid black;
+    z-index: 2;
+    width: stretch;
+    height: 100px;
+    bottom: 0;
+    gap: 20px;
+}
+
+.line--item {
+    background-color:antiquewhite;
+    width: 100px;
+    height: 100px;
+}
