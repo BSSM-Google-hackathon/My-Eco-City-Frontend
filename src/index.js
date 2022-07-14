@@ -9,13 +9,15 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { Mainpage } from './Main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}/>
+      <Route path="/" element={<Mainpage />}/>
       <Route path="/community" element={<Community />}/>
+      <Route path="/making" element={<App/>}/>
     </Routes>
   </BrowserRouter>
 );

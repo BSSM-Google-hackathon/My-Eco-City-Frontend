@@ -23,29 +23,29 @@ export default function SmartCity({ ...props }) {
       image: imgUrl,
       type: 'base64'
     },
-    {
-      headers: {
-        Authorization: 'Client-ID ' + '132ea982808368a',
-      }
-    }).then(res => {
-      setImglink(res.data.data.link);
-      console.log(res.data.data.link);
-    }).catch(e => {
-      console.log(e);
-    })
+      {
+        headers: {
+          Authorization: 'Client-ID ' + '132ea982808368a',
+        }
+      }).then(res => {
+        setImglink(res.data.data.link);
+        console.log(res.data.data.link);
+      }).catch(e => {
+        console.log(e);
+      })
   }
 
   const gl = useThree((state) => state.gl)
-    useControls({
-      screenshot: button(() => {
-        const link = document.createElement('a')
-        link.setAttribute('download', 'canvas.png')
-        const imgUrl = gl.domElement.toDataURL('image/png').replace('image/png', 'image/octet-stream');
-        console.log(imgUrl);
-        postImage(imgUrl);
-      })
+  useControls({
+    screenshot: button(() => {
+      const link = document.createElement('a')
+      link.setAttribute('download', 'canvas.png')
+      const imgUrl = gl.domElement.toDataURL('image/png').replace('image/png', 'image/octet-stream');
+      link.setAttribute('href', gl.domElement.toDataURL('image/png').replace('image/png', 'image/octet-stream'));
+      link.click();
     })
-  
+  })
+
 
   return (
     <group ref={group} {...props} dispose={null}>
@@ -147,7 +147,7 @@ export default function SmartCity({ ...props }) {
             <mesh geometry={nodes['������������_������_1_1_����������������_13_1'].geometry} material={materials.material_10} />
             <mesh geometry={nodes['������������_������_1_1_����������������2_3'].geometry} material={materials['.2_2']} />
           </group>
-          
+
           {/* 비행기 */}
           {/* <group position={[-6382.16, 5991.59, 597.05]} rotation={[0, -1.3, 0]}>
             <mesh geometry={nodes['������������_������_1_����������������_0'].geometry} material={materials.material_72} />

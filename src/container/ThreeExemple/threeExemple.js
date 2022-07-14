@@ -5,6 +5,7 @@ import { OrbitControls, Shadow } from "@react-three/drei";
 import SmartCity from '../SmartCity/Smartcity';
 // style
 import '../../styles/Canvas/canvas.css';
+import Sea from '../ProductionLine/ProductionComponents/sea';
 
 const ThreeExemple = () => { 
     return(
@@ -17,6 +18,10 @@ const ThreeExemple = () => {
                     {/* <directionalLight position={[-2, 5, 2]} intensity={5}/>  */}
                     <directionalLight position={[0, 1, 0]} intensity={1}/>
                     <OrbitControls enableZoom={true}/>
+                </Suspense>
+                <Suspense fallback={null}>
+                    <Sea/>
+                    <ambientLight intensity={.5} />
                 </Suspense>
             </Canvas>
         </div>
