@@ -5,13 +5,48 @@ license: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 source: https://sketchfab.com/3d-models/low-poly-city-pack-7f671f35e9ad4149b83451a3a92a6e2e
 title: low poly city pack
 */
-
-import React, { useRef } from 'react'
+import { useControls, button } from 'leva'
+import { useThree } from 'react-three-fiber'
+import axios from 'axios';
+import React, { useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function SmartCity({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/smart-city.gltf')
+
+  const [imglink, setImglink] = useState();
+
+  const postImage = (imgUrl) => {
+    const basUrl = 'https://api.imgur.com/3/image';
+    axios.post(basUrl, {
+      image: imgUrl,
+      type: 'base64'
+    },
+    {
+      headers: {
+        Authorization: 'Client-ID ' + '132ea982808368a',
+      }
+    }).then(res => {
+      setImglink(res.data.data.link);
+      console.log(res.data.data.link);
+    }).catch(e => {
+      console.log(e);
+    })
+  }
+
+  const gl = useThree((state) => state.gl)
+    useControls({
+      screenshot: button(() => {
+        const link = document.createElement('a')
+        link.setAttribute('download', 'canvas.png')
+        const imgUrl = gl.domElement.toDataURL('image/png').replace('image/png', 'image/octet-stream');
+        console.log(imgUrl);
+        postImage(imgUrl);
+      })
+    })
+  
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>

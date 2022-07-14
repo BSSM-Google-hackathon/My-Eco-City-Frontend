@@ -9,7 +9,7 @@ import '../../styles/Canvas/canvas.css';
 const ThreeExemple = () => { 
     return(
         <div>
-            <Canvas className="canvas">
+            <Canvas className="canvas" gl={{ preserveDrawingBuffer: true }} camera={{ position: [-1.5, 0.5, 3] }}>
                 <Suspense fallback={null}>
                     <Shadow />
                     <SmartCity />
