@@ -21,6 +21,7 @@
     margin: 50px 105px 20px 0;
     float: right;
     color: black;
+    box-shadow:0px 3px 5px gray;
   }
   .btn > p {
     position: absolute;
@@ -51,6 +52,24 @@
     height: 300px;
     background: grey;
     margin: 20px;
+    border-radius: 10px;
+    box-shadow:0px 3px 6px black;
+  }
+  .obj:nth-child(1) {
+    background-image: url('C:\Users\user\Desktop\TP\Eco-City-made-by-me-v2\public\main1.png');
+    background-size: cover;
+  }
+  .obj:nth-child(2) {
+    background-image: url('C:\Users\user\Desktop\TP\Eco-City-made-by-me-v2\public\main2.png');
+    background-size: cover;
+  }
+  .obj:nth-child(3) {
+    background-image: url('C:\Users\user\Desktop\TP\Eco-City-made-by-me-v2\public\main3.png');
+    background-size: cover;
+  }
+  .obj:nth-child(4) {
+    background-image: url('C:\Users\user\Desktop\TP\Eco-City-made-by-me-v2\public\main4.png');
+    background-size: cover;
   }
   .main{
     display: flex;
