@@ -7,33 +7,12 @@ title: low poly city pack
 */
 import { useControls, button } from 'leva'
 import { useThree } from 'react-three-fiber'
-import axios from 'axios';
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function SmartCity({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/smart-city.gltf')
-
-  const [imglink, setImglink] = useState();
-
-  const postImage = (imgUrl) => {
-    const basUrl = 'https://api.imgur.com/3/image';
-    axios.post(basUrl, {
-      image: imgUrl,
-      type: 'base64'
-    },
-      {
-        headers: {
-          Authorization: 'Client-ID ' + '132ea982808368a',
-        }
-      }).then(res => {
-        setImglink(res.data.data.link);
-        console.log(res.data.data.link);
-      }).catch(e => {
-        console.log(e);
-      })
-  }
 
   const gl = useThree((state) => state.gl)
   useControls({
