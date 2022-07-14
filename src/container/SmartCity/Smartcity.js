@@ -7,8 +7,7 @@ title: low poly city pack
 */
 import { useControls, button } from 'leva'
 import { useThree } from 'react-three-fiber'
-import axios from 'axios';
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function SmartCity({ ...props }) {

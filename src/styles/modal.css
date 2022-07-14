@@ -1,0 +1,25 @@
+.modal-root{
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.41);
+    height: 100%;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-title{
+    color: white;
+    font-size: 3.5em;
+    margin-top: 40%;
+}
+.modal-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-link > a{
+    padding-top: 30px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
