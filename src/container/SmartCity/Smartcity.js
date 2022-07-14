@@ -15,26 +15,6 @@ export default function SmartCity({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/smart-city.gltf')
 
-  const [imglink, setImglink] = useState();
-
-  const postImage = (imgUrl) => {
-    const basUrl = 'https://api.imgur.com/3/image';
-    axios.post(basUrl, {
-      image: imgUrl,
-      type: 'base64'
-    },
-      {
-        headers: {
-          Authorization: 'Client-ID ' + '132ea982808368a',
-        }
-      }).then(res => {
-        setImglink(res.data.data.link);
-        console.log(res.data.data.link);
-      }).catch(e => {
-        console.log(e);
-      })
-  }
-
   const gl = useThree((state) => state.gl)
   useControls({
     screenshot: button(() => {
@@ -45,7 +25,6 @@ export default function SmartCity({ ...props }) {
       link.click();
     })
   })
-
 
   return (
     <group ref={group} {...props} dispose={null}>

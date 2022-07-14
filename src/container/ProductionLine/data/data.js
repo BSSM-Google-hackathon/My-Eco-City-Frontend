@@ -6,8 +6,8 @@ const eco_item = [
 }, 
 {
     id: 2,
-    title: "water",
-    desc: "",
+    title: "box",
+    desc: "박스입니다.",
 }, 
 {
     id: 3,
