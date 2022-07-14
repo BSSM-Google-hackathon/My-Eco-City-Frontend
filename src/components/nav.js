@@ -8,12 +8,19 @@ function Nav(props)
     console.log(props);
     return(
         <div className="nav-root">
-            
-            {props.isOpen ? <div className='nav-hamBtn' style={{ color: 'white' }}>
-                <Hamburger toggled={props.isOpen} toggle={props.modal}/>
-            </div> : <div className='nav-hamBtn' style={{ color: 'gray' }}>
-                <Hamburger toggled={props.isOpen} toggle={props.modal}/>
-            </div>}
+            <input type = "checkbox" id = "menuicon"></input>
+            <label for = "menuicon" class = "menubtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class = "sidebar">
+                <ul class = "navi">
+                    <li class = "sidelogo">MEC</li>
+                    <li class = "menu"><a href = "/community">커뮤니티</a></li>
+                    <li class = "menu"><a href = "/making">나만의 빌리지</a></li>
+                </ul>
+            </div>
             <div className='nav-icon' onClick={()=>{ nav('/') }} style={{ cursor: "pointer" }} >
                 <span className='nav-icon-big'>M</span>
                 <span className='nav-icon-small'>y</span>

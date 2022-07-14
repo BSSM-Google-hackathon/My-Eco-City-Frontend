@@ -5,7 +5,7 @@ function Modal()
 {   
     return(
         <div className="modal-root">
-            <h1 className='modal-title'>MMEC</h1>
+            <h1 className='modal-title'>MEC</h1>
             <div className='modal-link'>
                 <Link to={'/community'}>커뮤니티</Link>
                 <Link to={'/making'}>나만의 빌리지</Link>
