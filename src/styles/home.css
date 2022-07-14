@@ -11,7 +11,7 @@
     cursor: pointer;
     border-radius: 15px;
     border: 1px solid black;
-    margin: 25px 200px 0 0;
+    margin: 50px 105px 20px 0;
     float: right;
     color: black;
   }
@@ -35,6 +35,7 @@
     margin-left: 95px;
   }
   .images {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(4, 340px);
   }
@@ -43,4 +44,9 @@
     height: 300px;
     background: grey;
     margin: 20px;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }

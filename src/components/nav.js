@@ -1,21 +1,22 @@
 import '../styles/nav.css';
 import Hamburger from 'hamburger-react'
+import { useNavigate } from 'react-router-dom';
 
 function Nav(props)
 {
+    const nav = useNavigate();
     console.log(props);
     return(
         <div className="nav-root">
+            
             {props.isOpen ? <div className='nav-hamBtn' style={{ color: 'white' }}>
                 <Hamburger toggled={props.isOpen} toggle={props.modal}/>
             </div> : <div className='nav-hamBtn' style={{ color: 'gray' }}>
                 <Hamburger toggled={props.isOpen} toggle={props.modal}/>
             </div>}
-            <div className='nav-icon'>
+            <div className='nav-icon' onClick={()=>{ nav('/') }} style={{ cursor: "pointer" }} >
                 <span className='nav-icon-big'>M</span>
                 <span className='nav-icon-small'>y</span>
-                <span className='nav-icon-big'>M</span>
-                <span className='nav-icon-small'>ade</span>
                 <span className='nav-icon-big'>E</span>
                 <span className='nav-icon-small'>co</span>
                 <span className='nav-icon-big'>C</span>

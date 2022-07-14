@@ -12,7 +12,7 @@ export const Mainpage = () => {
   }
 
   return (
-    <div>
+    <div className='main-root' >
       {isOpen ? <Modal modal={isOpen} toggle={setIsOpen} /> : <></>}
       <Nav modal={modal} isOpen={isOpen} />
       <Home/>
