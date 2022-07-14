@@ -5,7 +5,7 @@ import './styles/community.css';
 export const Community = () => {
   return (
 
-    <body>
+    <section className="community">
       <div className="container">
       <div className="post">
         <div className="profile">
@@ -36,6 +36,6 @@ export const Community = () => {
         </div>
       </div>
       </div>
-    </body>
+    </section>
   )
 }
