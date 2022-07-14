@@ -6,6 +6,7 @@
     justify-content: center;
     font-family:'Gmarket Sans';
 }
+
 .container{
     flex-direction: column;
 }

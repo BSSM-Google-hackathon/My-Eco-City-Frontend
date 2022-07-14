@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { Suspense } from 'react';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Shadow } from "@react-three/drei";
 import Sea from './ProductionComponents/sea';
+import { useState } from 'react';
 
 // style
 import '../../styles/Canvas/productionLine.css'
@@ -14,21 +15,24 @@ import { useOrbitContext } from '../../context/orbitContext';
 
 const ProductionLine = () => {
 
+  const [nowid, setNowid] = useState(-1);
+
   const {orbit,
     completed,
     checked} = useOrbitContext();
 
-  const SelectedItem = () => {
-    completed();
+  const SelectedItem = (idx) => {
+    completed(idx);
+    setNowid(idx);
   }
   
   const CompletedItem = () => {
-    checked();
+    checked(nowid);
   }
 
   const lineItem = eco_item.map((item, idx) => {
     return (
-      <div className="line--item" onClick={SelectedItem} key={item.id} >{idx+1} {item.title} {item.desc} 
+      <div className="line--item" onClick={()=>SelectedItem(idx)} key={item.id} >{idx+1} {item.title} {item.desc} 
         <Canvas className="canvas2">
           <Suspense fallback={null}>
             <Shadow />

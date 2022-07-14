@@ -7,6 +7,7 @@ import SmartCity from '../SmartCity/Smartcity';
 import '../../styles/Canvas/canvas.css';
 import Sea from '../ProductionLine/ProductionComponents/sea';
 import { OrbitContext, useOrbitContext } from '../../context/orbitContext';
+import Box from '../ProductionLine/ProductionComponents/Box';
 
 const ThreeExemple = ({ children }) => { 
 
@@ -26,10 +27,14 @@ const ThreeExemple = ({ children }) => {
                     <directionalLight position={[0, 1, 0]} intensity={1}/>
                     <OrbitControls enabled={orbit[0]}/>
                 </Suspense>
-                <Suspense fallback={null}>
-                    <Sea orbit={orbit}/>
+                {orbit[2][0].created && (<Suspense fallback={null}>
+                    <Sea orbit={orbit[2][0].transformable}/>
                     <ambientLight intensity={.5} />
-                </Suspense>
+                </Suspense>)}
+                {orbit[2][1].created && (<Suspense fallback={null}>
+                    <Box orbit={orbit[2][1].transformable}/>
+                    <ambientLight intensity={.5} />
+                </Suspense>)}
             </Canvas>
         </div>
     )

@@ -18,9 +18,9 @@ export default function Sea( props ) {
   const { nodes, materials, animations } = useGLTF('/city.gltf')
 
   // const { actions } = useAnimations(animations, group)
-  
+
   return (
-    <TransformControls enabled={props.orbit[1]} showX={props.orbit[1]} showZ={props.orbit[1]} showY={props.orbit[1]}>
+    <TransformControls enabled={props.orbit} showX={props.orbit} showZ={props.orbit} showY={props.orbit}>
     <group ref={group} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.2}>
